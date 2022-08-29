@@ -1,0 +1,13 @@
+{
+  "name": "react-dom",
+  "version": "1.0.0",
+  "description": "Example of using react-router-dom for basic routing. Includes a HOC that can be wrapped around all routes that should be authenticated.",
+  "keywords": ["react-router-dom", "hoc"],
+  "homepage": "https://codesandbox.io",
+  "main": "index.js",
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-router-dom": "4.2.2"
+  }
+}

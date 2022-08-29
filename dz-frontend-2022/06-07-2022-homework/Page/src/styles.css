@@ -1,0 +1,23 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+  margin: 40px 0 50px 0;
+}
+
+.page {
+  width: 300px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 0 20px 0 0;
+  border: rgb(62, 32, 90) solid 1px;
+  background: linear-gradient(45deg, rgb(84, 4, 138), rgb(129, 206, 241));
+}
+
+.page:hover {
+  background: linear-gradient(45deg, rgb(236, 162, 214), rgb(137, 33, 207));
+}
