@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: 100%;
+    overflow: auto;
+}
+
+.container-all {
+    width: 100%;
+}
+
+h1 {
+    color: rgb(1, 205, 202);
+    font-weight: 700;
+    margin: 30px;
+}
+
+
+/* Меню навигации, нав бар */
+nav {
+    background-color: rgb(51, 56, 60);
+}
+
+.link {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.link div {
+    width: auto;
+    border-left: solid 1px rgba(255, 255, 255, 0.349);
+    text-align: center;
+    padding: 0 25px 0 25px;
+}
+
+
+/* весь контент */
+.container-content {
+    margin: 40px;
+}
+
+
+/* добавить книгу */
+.add-book {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.add-book h5 {
+    color: rgb(1, 205, 202);
+}
+
+.add-book button {
+    border-radius: 3px;
+    border: solid 1px rgb(128, 128, 128);    
+}
+
+/* Форма добавления фильма */
+.container-content form {
+    display: none;
+    width: 60%;
+    border-radius: 3px;
+    border: solid 1px rgb(128, 128, 128);  
+    margin: 30px auto 50px auto;
+    font-size: 15px;
+    padding: 25px;
+}
+
+
+.container-content form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.container-content form div label {
+    width: 300px;
+    margin-top: 5px;
+}
+
+.container-content form button {
+    height: 40px;
+}
+
+.container-content form button p {
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+hr {
+    margin: 30px 0;
+    color: rgba(69, 69, 69, 0.809);
+}
+
+
+/* сортировка и поиск книг */
+.sort-and-search-books {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.sort-and-search-books button {
+    border-radius: 3px;
+    border: solid 1px rgb(128, 128, 128);
+    width: 80px;
+    height: 30px;
+}
+
+.sort-book label {
+    margin-right: 10px;
+}
+
+.sort-book input {
+    margin-right: 10px;
+}
+
+.search-book label {
+    margin-right: 10px;
+}
+
+.search-book input {
+    margin-right: 10px;
+}
+
+
+/* список книг */
+.list-books {
+
+}
+
+
+
+
+
+
