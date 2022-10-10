@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="cards.css">
+        <title>List Books</title>
+    </head>
+
+    <body>
+        
+        <h1 class="error">Error: Sorry! The section is under development</h1>
+
+
+        <div class="container-all">
+
+            <h1>LIBRARY</h1>
+
+
+            <!--   Меню навигации, нав бар -->
+            <nav class="link row navbar-dark">
+                <div><a class="nav-link" href="books.html">Books</a></div>
+                <div><a class="nav-link" href="visitors.html">Visitors</a></div>
+                <div class="active-link"><a class="nav-link active" href="cards.html">Cards</a></div>
+                <div><a class="nav-link" href="statistics.html">Statistics</a></div>
+            </nav>
+
+
+            <div class="container-cards">
+
+
+                <!--   Кнопка добавления посетителя -->
+                <div class="add-cards">
+                    <h5>ALL CARDS:</h5>
+                    <button class="btn-add-cards form-control" id="btnAddNewCards">New cards</button>
+                </div>
+
+
+                <!--   Форма добавления посетителя -->
+                <form class="form-add-cards" id="formAddCards">
+                    <div>
+                        <label for="formVisitor">Visitor:</label>
+                        <input class="form-visitors form-control" type="text" id="formVisitor">
+                    </div>
+
+                    <div>
+                        <label for="formBook">Book:</label>
+                        <input class="form-books form-control" type="text" id="formBook">
+                    </div>
+
+                    <button class="btn-add-apply form-control" type="button" onclick="insertRow('tableCards'); value=''">Add</button>
+                </form>
+
+
+                <hr>
+
+
+                <!-- поиск по таблице -->
+                <div class="search-cards">
+                    <label for="iptSearch">Search:</label>
+                    <input class="ipt-search-cards form-control" id="iptSearch" type="text" onkeyup="tableSearch()">
+                </div>
+                
+
+                <!-- таблица посетителей -->
+                <div class="table-cards">
+
+                    <table id="tableCards">
+                        <thead>
+                            <tr class="title-cards">
+                                <th class="col-1 th-sort-cards">ID</th>
+                                <th class="col-3 th-sort-cards">Visitor</th>
+                                <th class="col-3 th-sort-cards">Book</th>
+                                <th class="col-2 th-sort-cards">Borrow Date</th>
+                                <th class="col-2 th-sort-cards">Return Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="list-cards"></tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="cards.js"></script>
+    </body>
+</html>

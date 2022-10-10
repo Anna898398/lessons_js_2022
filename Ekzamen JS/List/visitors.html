@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="visitors.css">
+        <title>List Books</title>
+    </head>
+
+    <body>
+        <div class="container-all">
+
+            <h1>LIBRARY</h1>
+
+
+            <!--   Меню навигации, нав бар -->
+            <nav class="link row navbar-dark">
+                <div><a class="nav-link" href="books.html">Books</a></div>
+                <div class="active-link"><a class="nav-link active" href="visitors.html">Visitors</a></div>
+                <div><a class="nav-link" href="cards.html">Cards</a></div>
+                <div><a class="nav-link" href="statistics.html">Statistics</a></div>
+            </nav>
+
+
+            <div class="container-visitors">
+
+
+                <!--   Кнопка добавления посетителя -->
+                <div class="add-visitor">
+                    <h5>ALL VISITORS:</h5>
+                    <button class="btn-add-visitor form-control" id="btnAddNewVisitor">New visitor</button>
+                </div>
+
+
+                <!--   Форма добавления посетителя -->
+                <form class="form-add-visitor" id="formAddVisitor">
+                    <div>
+                        <label for="formName">Name:</label>
+                        <input class="form-name form-control" type="text" id="formName">
+                    </div>
+
+                    <div>
+                        <label for="formPhone">Phone:</label>
+                        <input class="form-phone form-control" type="text" id="formPhone">
+                    </div>
+
+                    <button class="btn-add-apply form-control" type="button" onclick="insertRow('tableVisitors'); value=''">Add</button>
+                </form>
+
+
+                <hr>
+
+
+                <!-- поиск по таблице -->
+                <div class="search-visitor">
+                    <label for="iptSearch">Search:</label>
+                    <input class="ipt-search-visitor form-control" id="iptSearch" type="text" onkeyup="tableSearch()">
+                </div>
+                
+
+                <!-- таблица посетителей -->
+                <div class="table-visitors">
+
+                    <table id="tableVisitors">
+                        <thead>
+                            <tr class="title-visitors">
+                                <th class="col-1 th-sort-visitor">ID</th>
+                                <th class="col-3 th-sort-visitor">Name</th>
+                                <th class="col-3 th-sort-visitor">Phone</th>
+                                <th class="col-1">Edit</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="list-visitors"></tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="visitors.js"></script>
+    </body>
+</html>

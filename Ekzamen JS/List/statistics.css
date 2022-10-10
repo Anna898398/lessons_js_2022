@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: 100%;
+    overflow: auto;
+}
+
+.container-all {
+    width: 100%;
+}
+
+h1 {
+    color: rgb(1, 205, 202);
+    font-weight: 700;
+    margin: 30px;
+}
+
+
+/* Меню навигации, нав бар */
+nav {
+    background-color: rgb(73, 73, 73);
+}
+
+.link {
+    font-size: 20px;
+    padding-left: 40px;
+    background-color: rgb(51, 56, 60);
+}
+
+.link div {
+    width: auto;
+    border-left: solid 1px rgba(255, 255, 255, 0.349);
+    text-align: center;
+    padding: 0 25px 0 25px;
+}
+
+.link a {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.link a:hover {
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.link .active-link a {
+    color: rgb(255, 255, 255);
+}
+
+.link .active-link {
+    border-bottom: solid 3px rgb(1, 205, 202);
+}
+
+.error {
+    font-size: 30px;
+    color: rgb(253, 14, 14);
+}
+
+
